@@ -1,0 +1,1666 @@
+<html lang="hi"><head><script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202509230101/show_ads_impl_fy2021.js?bust=95372195"></script><script>(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjcwN2Q5NzI1ZGNkZmEzM2ViMTkxYzg0Njg0Y2JmMjhjYTY0NWFmMDYiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxODA3NzMxNDU1MDU0ODU5NDg2NSIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjX2JhZjAyMzlhNjVmYzVlYzdfaW1hZ2VfdG9vbGJveF91bHRpbWF0ZS5odG1sLTUyOCJ9LCJleHAiOjE3NTg5MDcwMzgsImlhdCI6MTc1ODkwMzQzOCwiYWxnIjoiUlMyNTYifQ.iLbGR2Xe0fZimL8z_5H4qWdjhbQ1K67t6vh_tYTrGTciaQUYYPDQE0_mH7Scw_UFk9q73KCWAjAiNDGzn-cXOQMThB-apaSL9xdrXog5325X0K4kiP620d_uK9tBd2MUzvFPoeHLDpiPkO5RcTUWh49ITFBAqK_9fc83dnktZpOQZl9VUVQn6hmlvs-2ZSDPZUD3eVceFgbrrjG8BGY-hMQ-ArBUdEFCWwOJdHnCnIp6be3v_BCDvdsYUIVWrqOtEGLMwhy4bG-ecYYP-q4g09y4tD3mygX9PHrW9bjvvsXOP-dZJpJ3eMNODZP5iAI_p5ZjcXLgoblBRZ5AMS8-EA","c_baf0239a65fc5ec7_image_toolbox_ultimate.html-528")</script><script>'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var d=n;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&h(d,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});p("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){const d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);const c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var v=(()=>{let a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){const b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let x=null;function y(a={}){return x?x:a.l?x=a.l:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var d;if(!(d=b.width)){d=z(a,"border-left-width");var c=z(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=z(a,"border-top-width"),c=z(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function B(a){return new Promise((b,d)=>{const c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,d){return t(function*(){const c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return C(c)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(d=>{const c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function G(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=F(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,d){return t(function*(){const c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);const e=yield c.blob();return new Promise((f,g)=>{const k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(d({o:c,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function K(a,b,d){let c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function L(a,b,d){return t(function*(){const c=K(a,b,d.C);if(J[c]!=null)return J[c];d.u&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());let e;try{const f=yield I(a,d.i,({o:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});e=`data:${b};base64,${f}`}catch(f){e=d.B||""}return J[c]=e})};const M={P:"application/font-woff",R:"application/font-woff",N:"application/font-truetype",v:"application/vnd.ms-fontobject",H:"image/png",F:"image/jpeg",D:"image/jpeg",A:"image/gif",M:"image/tiff",L:"image/svg+xml",O:"image/webp"};function N(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function O(a){return t(function*(){const b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function aa(a,b){return t(function*(){if(a.currentSrc){var d=document.createElement("canvas");const c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return B(d)}d=a.poster;d=yield L(d,M[N(d).toLowerCase()]||"",b);return B(d)})}
+function ba(a,b){return t(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield P(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ca(a,b){return t(function*(){return E(a,HTMLCanvasElement)?O(a):E(a,HTMLVideoElement)?aa(a,b):E(a,HTMLIFrameElement)?ba(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function da(a,b,d){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;let c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||E(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>P(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ea(a,b,d){const c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):y(d).forEach(f=>{let g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function fa(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function ha(a,b){return t(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){const g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield P(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function P(a,b,d){return t(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ca(c,b)).then(c=>da(a,c,b)).then(c=>{E(c,Element)&&(ea(a,c,b),G(a,c,":before",b),G(a,c,":after",b),E(a,HTMLTextAreaElement)&&(c.textContent=a.value),E(a,HTMLInputElement)&&c.setAttribute("value",a.value),fa(a,c));return c}).then(c=>ha(c,b)):null})};const Q=/url\((['"]?)([^'"]+?)\1\)/g,ia=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,ja=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ka(a){const b=[];a.replace(Q,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!H(d))}
+function la(a,b,d,c){return t(function*(){try{const e=d?(new URL(b,d||void 0)).toString():b;let f;f=yield L(e,M[N(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function ma(a,{I:b}){return b?a.replace(ja,d=>{for(;;){const [c,,e]=ia.exec(d)||[],f=c,g=e;if(!g)return"";if(g===b)return`src: ${f};`}}):a}
+function R(a,b,d){return t(function*(){if(a.search(Q)===-1)return a;const c=ma(a,d);return ka(c).reduce((e,f)=>e.then(g=>la(g,f,b,d)),Promise.resolve(c))})};function S(a,b,d){return t(function*(){var c;const e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield R(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function na(a,b){return t(function*(){(yield S("background",a,b))||(yield S("background-image",a,b));(yield S("mask",a,b))||(yield S("-webkit-mask",a,b))||(yield S("mask-image",a,b))||(yield S("-webkit-mask-image",a,b))})}
+function oa(a,b){return t(function*(){const d=E(a,HTMLImageElement);if(d&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield L(c,M[N(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.m?(...k)=>{try{f(b.m(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function pa(a,b){return t(function*(){const d=w(a.childNodes).map(c=>T(c,b));yield Promise.all(d).then(()=>a)})}function T(a,b){return t(function*(){E(a,Element)&&(yield na(a,b),yield oa(a,b),yield pa(a,b))})};const U={};function V(a){return t(function*(){var b=U[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return U[a]=b})}function W(a,b){return t(function*(){let d=a.cssText;const c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){let g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.i,({result:k})=>{d=d.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>d)})}
+function X(a){if(a==null)return[];const b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function qa(a,b){return t(function*(){const d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=V(f.href).then(m=>W(m,b)).then(m=>X(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Da){}})).catch(()=>{});c.push(f)}})}catch(f){const g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&c.push(V(e.href).then(k=>W(k,b)).then(k=>X(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function ra(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(Q)!==-1)}function sa(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=w(a.ownerDocument.styleSheets);d=yield qa(d,b);return ra(d)})}
+function ta(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}const d=new Set;b(a);return d}function ua(a,b){return t(function*(){const d=yield sa(a,b),c=ta(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>R(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function va(a,b){return t(function*(){const d=b.j!=null?b.j:b.K?null:yield ua(a,b);if(d){const c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function wa(a,b={}){return t(function*(){const {width:d,height:c}=A(a,b),e=yield P(a,b,!0);yield va(e,b);yield T(e,b);u(e,b);return yield D(e,d,c)})}
+function xa(a,b={}){return t(function*(){const {width:d,height:c}=A(a,b);var e=yield wa(a,b);e=yield B(e);const f=document.createElement("canvas"),g=f.getContext("2d"),k=b.G||window.devicePixelRatio||1,m=b.h||d,q=b.g||c;f.width=m*k;f.height=q*k;!b.J&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=
+16384));f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function ya(a,b={}){return t(function*(){return(yield xa(a,b)).toDataURL()})};const za=["gemini.google.com","corp.google.com","proxy.googlers.com"];function Y(){return document.body.querySelectorAll('[class*="animate"]').length>0}function Z(a){return t(function*(){try{return yield ya(a,{h:a.offsetWidth,g:a.offsetHeight})}catch(d){var b=a.offsetHeight;const c=document.createElement("canvas");c.width=a.offsetWidth;c.height=b;return c.toDataURL("image/png")}})}
+function Aa(){return t(function*(){const a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ba(a){return t(function*(){let b=document.body;if(Y()){var d=yield Aa();b=d;document.body.appendChild(d)}d=yield Z(b);Y()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:d,topOffset:document.documentElement.scrollTop},a.origin)})}function Ca(a){return t(function*(){const b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(za.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ba(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ca(a)))}}));
+</script><script>(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script>
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script>((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-2.5-flash-preview-05-20","imageModelName":"imagen-3.0-generate-002","imageEditModelName":"gemini-2.5-flash-image-preview","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash-preview-04-17"]})</script><script>(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎨 Image Toolbox: Compress, Convert, Resize, Crop, Rotate, Flip &amp; Filter</title>
+    <!-- Tailwind CSS CDN for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- jsPDF Library for Image to PDF conversion -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" crossorigin="anonymous"></script>
+    <style>
+        /* General Styles for Aesthetics */
+        :root {
+            --primary-color: #3b82f6; /* Blue 500 */
+            --accent-color: #10b981; /* Emerald 500 */
+            --bg-dark: #1f2937; /* Dark Gray */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Very Dark Blue */
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .main-content {
+            flex-grow: 1;
+        }
+        .container-card {
+            background-color: var(--bg-dark);
+            border: 1px solid #374151;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        }
+        .primary-btn {
+            background-color: var(--accent-color);
+            transition: all 0.2s ease;
+        }
+        .primary-btn:hover {
+            background-color: #059669; /* Darker Emerald */
+            transform: translateY(-1px);
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.4);
+        }
+        /* Active Navigation Link Styling */
+        .nav-link.active {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            font-weight: 600;
+        }
+        .tool-link.active {
+            background-color: #374151; /* Darker gray for active tool */
+            border-left-color: var(--accent-color);
+        }
+
+        /* Custom styles for image cropping preview */
+        .img-container {
+            position: relative;
+            overflow: hidden;
+            max-height: 400px;
+            display: inline-block;
+        }
+        .crop-area {
+            position: absolute;
+            border: 2px dashed #ff0000;
+            cursor: move;
+            background: rgba(255, 255, 255, 0.2);
+        }
+        /* Adsense Specific Styling for Fixed Unit and Responsive Unit */
+        .ad-container {
+            display: flex;
+            flex-direction: column; /* Ensure responsive ad container respects flow */
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            overflow: hidden; 
+        }
+        /* Style for the Source Code Download Button */
+        #downloadSourceBtn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 50;
+        }
+    </style>
+    
+    <!-- 1. ADMOB/ADSENSE LOADING SCRIPT: CLIENT ID SET -->
+    <!-- Client ID: ca-pub-2919610198483069 -->
+    <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2919610198483069" crossorigin="anonymous" data-checked-head="true"></script>
+
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.relative{position:relative}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-8{margin-bottom:2rem}.mt-10{margin-top:2.5rem}.mt-8{margin-top:2rem}.mb-6{margin-bottom:1.5rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-3{margin-top:0.75rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-min{height:min-content}.h-2{height:0.5rem}.h-8{height:2rem}.h-auto{height:auto}.max-h-64{max-height:16rem}.w-full{width:100%}.w-8{width:2rem}.max-w-4xl{max-width:56rem}@keyframes spin{to{transform:rotate(360deg)}}.animate-spin{animation:spin 1s linear infinite}.cursor-pointer{cursor:pointer}.list-inside{list-style-position:inside}.list-disc{list-style-type:disc}.appearance-none{-webkit-appearance:none;appearance:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-4{border-width:4px}.border-l-4{border-left-width:4px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-gray-600{--tw-border-opacity:1;border-color:rgb(75 85 99 / var(--tw-border-opacity, 1))}.border-transparent{border-color:transparent}.border-yellow-500{--tw-border-opacity:1;border-color:rgb(234 179 8 / var(--tw-border-opacity, 1))}.border-blue-400{--tw-border-opacity:1;border-color:rgb(96 165 250 / var(--tw-border-opacity, 1))}.border-blue-600{--tw-border-opacity:1;border-color:rgb(37 99 235 / var(--tw-border-opacity, 1))}.border-gray-700{--tw-border-opacity:1;border-color:rgb(55 65 81 / var(--tw-border-opacity, 1))}.border-t-transparent{border-top-color:transparent}.bg-gray-700{--tw-bg-opacity:1;background-color:rgb(55 65 81 / var(--tw-bg-opacity, 1))}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity, 1))}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity, 1))}.bg-purple-600{--tw-bg-opacity:1;background-color:rgb(147 51 234 / var(--tw-bg-opacity, 1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-gray-600{--tw-bg-opacity:1;background-color:rgb(75 85 99 / var(--tw-bg-opacity, 1))}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.bg-yellow-600{--tw-bg-opacity:1;background-color:rgb(202 138 4 / var(--tw-bg-opacity, 1))}.object-contain{object-fit:contain}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-4{padding-left:1rem;padding-right:1rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.pt-4{padding-top:1rem}.text-left{text-align:left}.text-center{text-align:center}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235 / var(--tw-text-opacity, 1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-300{--tw-text-opacity:1;color:rgb(253 224 71 / var(--tw-text-opacity, 1))}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-200{transition-duration:200ms}.hover\:bg-gray-600:hover{--tw-bg-opacity:1;background-color:rgb(75 85 99 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-700:hover{--tw-bg-opacity:1;background-color:rgb(55 65 81 / var(--tw-bg-opacity, 1))}.hover\:bg-purple-700:hover{--tw-bg-opacity:1;background-color:rgb(126 34 206 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-700:hover{--tw-bg-opacity:1;background-color:rgb(67 56 202 / var(--tw-bg-opacity, 1))}.hover\:bg-yellow-700:hover{--tw-bg-opacity:1;background-color:rgb(161 98 7 / var(--tw-bg-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:text-blue-400:hover{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}@media (min-width: 768px){.md\:block{display:block}.md\:w-1\/2{width:50%}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:p-6{padding:1.5rem}.md\:text-base{font-size:1rem;line-height:1.5rem}}@media (min-width: 1024px){.lg\:col-span-1{grid-column:span 1 / span 1}.lg\:col-span-3{grid-column:span 3 / span 3}.lg\:block{display:block}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}</style><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9nrunKdU5m96PSN1XsSGr3qOP0lvPFUB2AiAylCDlN5DTl17uDFkpQuHj1AFtgWLxpLaiBZuhrtb2WOu7ofHwEAAACKeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A93bovR+QVXNx2/38qDbmeYYf1wdte9EO37K9eMq3r+541qo0byhYU899BhPB7Cv9QqD7wIbR1B6OAc9kEfYCA4AAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A1S5fojrAunSDrFbD8OfGmFHdRFZymSM/1ss3G+NEttCLfHkXvlcF6LGLH8Mo5PakLO1sCASXU1/gQf6XGuTBgwAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+<body class="p-4 relative">
+
+    <!-- DOWNLOAD SOURCE CODE BUTTON (Text changed to 'ऐप डाउनलोड करें') -->
+    <button id="downloadSourceBtn" onclick="downloadSourceCode()" class="hidden md:block bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold py-2 px-4 rounded-full shadow-xl transition-all duration-300">
+        ⬇️ ऐप डाउनलोड करें
+    </button>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="w-full max-w-4xl bg-gray-800 rounded-lg p-3 shadow-lg mb-8">
+        <div class="flex flex-wrap justify-center space-x-4 text-sm md:text-base font-medium">
+            <a href="#" onclick="showSection('home', this)" class="nav-link text-gray-300 hover:text-white transition-colors p-2">🏠 होम</a>
+            <a href="#" onclick="showSection('toolbox', this)" class="nav-link text-gray-300 hover:text-white transition-colors p-2 active">🔧 टूलबॉक्स</a>
+            <a href="#" onclick="showSection('privacy', this)" class="nav-link text-gray-300 hover:text-white transition-colors p-2">🔒 प्राइवेसी</a>
+            <a href="#" onclick="showSection('contact', this)" class="nav-link text-gray-300 hover:text-white transition-colors p-2">📞 संपर्क</a>
+        </div>
+    </nav>
+
+
+    <div class="main-content w-full max-w-4xl p-3 md:p-6 rounded-xl container-card grid grid-cols-1 gap-6 lg:grid-cols-4" style="height: auto !important;">
+        
+        <!-- Tool Sidebar -->
+        <div id="tool-sidebar" class="lg:block lg:col-span-1 bg-gray-800 p-4 rounded-lg h-min">
+            <h2 class="text-xl font-bold mb-4 text-blue-400">टूल चुनें</h2>
+            <nav class="space-y-2">
+                <button onclick="selectTool('compress_convert')" class="tool-link block w-full text-left p-3 rounded-lg hover:bg-gray-700 transition-colors border-l-4 border-transparent active">
+                    ⚡ कंप्रेस &amp; कन्वर्ट
+                </button>
+                <button onclick="selectTool('transform')" class="tool-link block w-full text-left p-3 rounded-lg hover:bg-gray-700 transition-colors border-l-4 border-transparent">
+                    📐 इमेज ट्रांसफॉर्मेशन
+                </button>
+                <button onclick="selectTool('crop')" class="tool-link block w-full text-left p-3 rounded-lg hover:bg-gray-700 transition-colors border-l-4 border-transparent">
+                    ✂️ इमेज क्रॉप करें
+                </button>
+            </nav>
+        </div>
+
+
+        <!-- Main Content Area -->
+        <div class="lg:col-span-3" style="height: auto !important;">
+            
+            <!-- ============================================== -->
+            <!-- 1. HOME SECTION -->
+            <!-- ============================================== -->
+            <section id="home-section" class="tool-section hidden" style="height: auto !important;">
+                <h1 class="text-4xl font-bold text-center mb-4 text-blue-400">👋 Image Toolbox में आपका स्वागत है</h1>
+                <p class="text-center text-gray-400 mb-8">अपनी तस्वीरों को **कंप्रेस, कन्वर्ट, साइज़ बदलने, क्रॉप, रोटेट, फ्लिप** और **PDF** बनाने के लिए सबसे तेज़ और सुरक्षित ऑनलाइन टूल।</p>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <button onclick="showSection('toolbox'); selectTool('compress_convert')" class="p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors shadow-md">
+                        <span class="font-bold text-accent-color text-lg block">⚡ कंप्रेस</span>
+                        <span class="text-sm text-gray-400">साइज़ छोटा करें</span>
+                    </button>
+                    <button onclick="showSection('toolbox'); selectTool('transform')" class="p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors shadow-md">
+                        <span class="font-bold text-accent-color text-lg block">🔄 ट्रांसफॉर्मेशन</span>
+                        <span class="text-sm text-gray-400">Resize, Rotate, Flip, Filter</span>
+                    </button>
+                    <button onclick="showSection('toolbox'); selectTool('crop')" class="p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors shadow-md">
+                        <span class="font-bold text-accent-color text-lg block">✂️ क्रॉप करें</span>
+                        <span class="text-sm text-gray-400">इमेज काटें</span>
+                    </button>
+                    <button onclick="showSection('toolbox'); selectTool('compress_convert'); document.getElementById('outputFormat').value = 'make_pdf'; handleFormatChange('make_pdf')" class="p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors shadow-md">
+                        <span class="font-bold text-accent-color text-lg block">📄 PDF बनाएं</span>
+                        <span class="text-sm text-gray-400">Image to PDF</span>
+                    </button>
+                </div>
+                
+                <section class="mt-10 p-4 bg-gray-700 rounded-lg border border-gray-600">
+                    <h2 class="text-xl font-semibold text-gray-200 mb-3">🛡️ हम आपकी प्राइवेसी की गारंटी देते हैं</h2>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        यह टूल **100% Client-Side** काम करता है। इसका मतलब है कि आपकी कोई भी फाइल कंप्रेसन, कन्वर्जन या एडिटिंग के लिए हमारे **सर्वर पर अपलोड नहीं होती है**। पूरी प्रक्रिया आपके ब्राउज़र में ही होती है, जिससे आपकी तस्वीरें और दस्तावेज़ **पूरी तरह से निजी और सुरक्षित** रहते हैं।
+                    </p>
+                </section>
+                
+                <!-- NEW ADSENSE SECTION: Responsive Ad Unit on Home Page -->
+                <div id="home-ad-banner" class="mt-8 py-4 px-2 ad-container bg-gray-900 border-2 border-yellow-500 rounded-lg text-center shadow-lg hidden" style="height: auto !important;">
+                    <p class="font-bold text-yellow-300 text-sm mb-2">💰 विज्ञापन स्लॉट (Responsive Ad - Home)</p>
+                    
+                    <!-- Ad Slot: data-ad-slot="4209866108" -->
+                    <ins class="adsbygoogle" style="display: block; width: 100%; height: 280px;" data-ad-client="ca-pub-2919610198483069" data-ad-slot="4209866108" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done"><div id="aswift_1_host" style="border: none; height: 280px; width: 788px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;"><iframe id="aswift_1" name="aswift_1" browsingtopics="true" style="left:0;position:absolute;top:0;border:0;width:788px;height:280px;min-height:auto;max-height:none;min-width:auto;max-width:none;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="788" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2919610198483069&amp;output=html&amp;h=280&amp;slotname=4209866108&amp;adk=2992401422&amp;adf=3971164072&amp;pi=t.ma~as.4209866108&amp;w=788&amp;fwrn=16&amp;fwrnh=100&amp;lmt=1758903439&amp;rafmt=1&amp;format=788x280&amp;url=blob%3Ahttps%3A%2F%2F1lnbd407c4da75ug5qrpn5u5n204lzgs2ucewvv6h55d9vk5zj-h810427903.scf.usercontent.goog%2Fe7a46644-288b-4708-9195-438950bb835b&amp;fwr=0&amp;fwrattr=true&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;aieuf=1&amp;uach=WyJBbmRyb2lkIiwiMTUuMC4wIiwiIiwiVjIyMjIiLCIxNDAuMC43MzM5LjE1NSIsbnVsbCwxLG51bGwsIiIsW1siQ2hyb21pdW0iLCIxNDAuMC43MzM5LjE1NSJdLFsiTm90PUE_QnJhbmQiLCIyNC4wLjAuMCJdLFsiR29vZ2xlIENocm9tZSIsIjE0MC4wLjczMzkuMTU1Il1dLDBd&amp;abgtt=6&amp;dt=1758903439146&amp;bpp=6&amp;bdt=731&amp;idt=486&amp;shv=r20250924&amp;mjsv=m202509230101&amp;ptt=9&amp;saldr=aa&amp;prev_fmts=0x0&amp;nras=1&amp;correlator=239919680561&amp;frm=6&amp;ife=1&amp;pv=1&amp;nhd=1&amp;u_tz=330&amp;u_his=9&amp;u_h=873&amp;u_w=393&amp;u_ah=873&amp;u_aw=393&amp;u_cd=24&amp;u_sd=2.75&amp;dmc=8&amp;adx=-12245933&amp;ady=-12245933&amp;biw=-12245933&amp;bih=-12245933&amp;isw=889&amp;ish=1669&amp;ifk=2673242189&amp;scr_x=-12245933&amp;scr_y=-12245933&amp;eid=31093039%2C31094370%2C31094694%2C95366795%2C95372142%2C95372195%2C95344789%2C95340252%2C95340254&amp;oid=2&amp;pvsid=5014722838186642&amp;tmod=1695381495&amp;uas=0&amp;nvt=1&amp;xatf=1&amp;top=https%3A%2F%2Fgemini.google.com&amp;brdim=0%2C0%2C0%2C0%2C393%2C0%2C393%2C743%2C889%2C1669&amp;vis=1&amp;rsz=o%7C%7CoeE%7C&amp;abl=CS&amp;pfx=0&amp;fu=128&amp;bc=31&amp;bz=1&amp;td=1&amp;tdf=2&amp;psd=W251bGwsbnVsbCxudWxsLDFd&amp;nt=1&amp;bisch=0&amp;blev=0.37&amp;ifi=2&amp;uci=2.lbje7di050lk&amp;fsb=1&amp;dtd=527" data-google-container-id="2.lbje7di050lk" tabindex="0" title="Advertisement" aria-label="Advertisement" data-load-complete="true"></iframe></div></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+
+            </section>
+
+
+            <!-- ============================================== -->
+            <!-- 2. MAIN TOOLBOX SECTION -->
+            <!-- ============================================== -->
+            <section id="toolbox-section" class="tool-section">
+                <h1 class="text-4xl font-bold text-center mb-6 text-blue-400">🔧 इमेज एडिटिंग टूलबॉक्स</h1>
+                
+                <!-- Upload Section -->
+                <div class="mb-6 p-4 border border-blue-600 border-dashed rounded-lg text-center bg-gray-700">
+                    <input type="file" id="imageUpload" accept="image/png, image/jpeg, image/webp" class="hidden" onchange="previewImage()">
+                    <label for="imageUpload" class="cursor-pointer primary-btn inline-block px-6 py-3 rounded-full text-lg font-semibold text-white shadow-lg">
+                        ⬆️ इमेज चुनें और अपलोड करें
+                    </label>
+                    <p id="fileName" class="mt-2 text-sm text-gray-300">कोई फाइल नहीं चुनी गई। (JPG, PNG सपोर्टेड)</p>
+                </div>
+
+                <!-- Tool Display Area -->
+                <div id="tool-display-area" class="hidden">
+                    <h2 class="text-2xl font-semibold mb-4 text-gray-200" id="currentToolTitle">⚡ कंप्रेस &amp; कन्वर्ट</h2>
+
+                    <!-- 2a. COMPRESS & CONVERT TOOL -->
+                    <div id="compress_convert_tool" class="tool-view">
+                        <div class="flex flex-col md:flex-row gap-4 mb-4">
+                            <div class="w-full md:w-1/2">
+                                <label for="outputFormat" class="block text-lg font-medium mb-2">आउटपुट फॉर्मेट चुनें:</label>
+                                <select id="outputFormat" onchange="handleFormatChange(this.value)" class="w-full p-2 rounded-lg bg-gray-800 border border-gray-600 text-white">
+                                    <option value="compress_jpg">JPG कंप्रेस (Optimize Size)</option>
+                                    <option value="compress_png">PNG कंप्रेस (Optimize Size)</option>
+                                    <option value="convert_png">PNG में कन्वर्ट करें</option>
+                                    <option value="convert_jpg">JPG में कन्वर्ट करें</option>
+                                    <option value="make_pdf">PDF बनाएं (Image to PDF)</option>
+                                </select>
+                            </div>
+                            <div class="w-full md:w-1/2" id="qualityControl">
+                                <label for="qualityRange" class="block text-lg font-medium mb-2">क्वालिटी (%):</label>
+                                <input type="range" id="qualityRange" min="0.1" max="1.0" step="0.05" value="0.8" oninput="updateQualityValue(this.value)" class="w-full h-2 bg-gray-600 rounded-lg appearance-none cursor-pointer">
+                                <div class="flex justify-between text-sm mt-1 text-gray-400">
+                                    <span>10%</span>
+                                    <span id="qualityValue" class="font-bold text-accent-color">80%</span>
+                                    <span>100%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2b. IMAGE TRANSFORMATION TOOL (NEW NAME & FEATURES) -->
+                    <div id="transform_tool" class="tool-view hidden">
+                        <p class="text-sm text-gray-400 mb-4">रोटेट, फ्लिप, साइज़ और फ़िल्टर सेटिंग लागू करें।</p>
+                        
+                        <!-- Rotate & Flip Controls -->
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                            <button onclick="rotateImage()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-2 rounded-lg text-sm shadow-md transition-all duration-200">
+                                ↻ 90° घुमाएँ
+                            </button>
+                            <button onclick="flipImage('h')" class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-2 rounded-lg text-sm shadow-md transition-all duration-200">
+                                ↔️ हॉरिजॉन्टल फ्लिप
+                            </button>
+                            <button onclick="flipImage('v')" class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-2 rounded-lg text-sm shadow-md transition-all duration-200">
+                                ↕️ वर्टिकल फ्लिप
+                            </button>
+                            <!-- Filter Dropdown -->
+                             <select id="filterSelect" onchange="setFilter(this.value)" class="w-full p-2 rounded-lg bg-gray-800 border border-gray-600 text-white text-sm font-bold">
+                                <option value="none">✨ कोई फ़िल्टर नहीं</option>
+                                <option value="grayscale">⚫ Grayscale</option>
+                                <option value="sepia">🟤 Sepia</option>
+                                <option value="invert">⚪ Invert</option>
+                            </select>
+                        </div>
+
+                        <!-- Resize Controls -->
+                        <div class="mb-4 border-t border-gray-700 pt-4">
+                            <h3 class="text-lg font-semibold mb-3">साइज़ बदलें (Resize)</h3>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label for="resizeWidth" class="block text-lg font-medium mb-2">नई चौड़ाई (Width in px):</label>
+                                    <input type="number" id="resizeWidth" min="1" placeholder="चौड़ाई" class="w-full p-2 rounded-lg bg-gray-800 border border-gray-600 text-white">
+                                </div>
+                                <div>
+                                    <label for="resizeHeight" class="block text-lg font-medium mb-2">नई ऊँचाई (Height in px):</label>
+                                    <input type="number" id="resizeHeight" min="1" placeholder="ऊँचाई" class="w-full p-2 rounded-lg bg-gray-800 border border-gray-600 text-white">
+                                </div>
+                            </div>
+                            <p class="text-sm text-gray-400 mt-2">नोट: अगर आप एक फील्ड खाली छोड़ते हैं, तो Aspect Ratio बनाए रखा जाएगा।</p>
+                        </div>
+                    </div>
+
+                    <!-- 2c. CROP TOOL -->
+                    <div id="crop_tool" class="tool-view hidden">
+                        <p class="text-sm text-gray-400 mb-4">ड्रैग करके क्रॉप एरिया चुनें।</p>
+                        <div id="cropContainer" class="img-container w-full bg-gray-800 rounded-lg border border-gray-600 text-center flex justify-center items-center">
+                            <img id="cropPreview" class="w-full h-auto object-contain rounded-lg" alt="Image to Crop">
+                            <div id="cropArea" class="crop-area hidden"></div>
+                        </div>
+                        <div class="mt-4 grid grid-cols-2 gap-4 text-sm text-gray-300">
+                            <p>X: <span id="cropX">0</span>, Y: <span id="cropY">0</span></p>
+                            <p>Width: <span id="cropW">0</span>, Height: <span id="cropH">0</span></p>
+                        </div>
+                    </div>
+
+
+                    <!-- Common Preview and Output Section -->
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-200">परिणाम और डाउनलोड</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                            <div>
+                                <p class="font-medium text-center mb-2">अपलोड की गई (Current State)</p>
+                                <!-- originalPreview now shows the current state after rotation/flip/filter -->
+                                <img id="originalPreview" class="w-full h-auto object-contain max-h-64 rounded-lg border border-gray-600 bg-gray-800" alt="Original Image Preview" src="">
+                                <p id="originalSize" class="text-sm text-gray-400 mt-2"></p>
+                            </div>
+                            <div>
+                                <p class="font-medium text-center mb-2">परिणाम (Output)</p>
+                                <canvas id="compressedCanvas" class="hidden w-full h-auto max-h-64 rounded-lg border border-gray-600 bg-gray-800"></canvas>
+                                <img id="processedPreview" class="w-full h-auto object-contain max-h-64 rounded-lg border border-gray-600 bg-gray-800 hidden" alt="Output Image Preview">
+                                <p id="processedSize" class="text-sm text-gray-400 mt-2"></p>
+                            </div>
+                        </div>
+
+                        <!-- Process Button -->
+                        <button id="processBtn" onclick="processImage()" class="w-full primary-btn px-6 py-3 rounded-full text-xl font-bold text-white mb-4 shadow-lg" disabled="">🔄 प्रोसेस करें</button>
+                        <button id="downloadBtn" onclick="downloadProcessedImage()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full text-lg hidden shadow-lg">
+                            ⬇️ फाइल डाउनलोड करें
+                        </button>
+                    </div>
+
+                    <!-- Loading Spinner -->
+                    <div id="loading" class="hidden text-center mt-4">
+                        <div class="animate-spin inline-block w-8 h-8 border-4 border-blue-400 border-t-transparent rounded-full"></div>
+                        <p class="mt-2 text-blue-400 font-semibold">प्रोसेसिंग प्रगति पर है... कृपया प्रतीक्षा करें।</p>
+                    </div>
+                </div>
+
+                <!-- AdSense Section: Horizontal Ad Unit on Toolbox Page -->
+                <div id="ad-banner" class="mt-8 py-4 px-2 ad-container bg-gray-900 border-2 border-yellow-500 rounded-lg text-center shadow-lg">
+                    <p class="font-bold text-yellow-300 text-sm mb-2">💰 विज्ञापन स्लॉट (AdSense Banner - 728x90)</p>
+                    
+                    <!-- Horizontal Ad Slot: data-ad-slot="3380000163" -->
+                    <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px; max-width: 100%;" data-ad-client="ca-pub-2919610198483069" data-ad-slot="3380000163" data-adsbygoogle-status="done"><div id="aswift_2_host" style="border: none; height: 90px; width: 728px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_2" name="aswift_2" browsingtopics="true" style="left:0;position:absolute;top:0;border:0;width:728px;height:90px;min-height:auto;max-height:none;min-width:auto;max-width:none;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2919610198483069&amp;output=html&amp;h=90&amp;slotname=3380000163&amp;adk=2921123327&amp;adf=2641462422&amp;pi=t.ma~as.3380000163&amp;w=728&amp;lmt=1758903439&amp;format=728x90&amp;url=blob%3Ahttps%3A%2F%2F1lnbd407c4da75ug5qrpn5u5n204lzgs2ucewvv6h55d9vk5zj-h810427903.scf.usercontent.goog%2Fe7a46644-288b-4708-9195-438950bb835b&amp;wgl=1&amp;aieuf=1&amp;uach=WyJBbmRyb2lkIiwiMTUuMC4wIiwiIiwiVjIyMjIiLCIxNDAuMC43MzM5LjE1NSIsbnVsbCwxLG51bGwsIiIsW1siQ2hyb21pdW0iLCIxNDAuMC43MzM5LjE1NSJdLFsiTm90PUE_QnJhbmQiLCIyNC4wLjAuMCJdLFsiR29vZ2xlIENocm9tZSIsIjE0MC4wLjczMzkuMTU1Il1dLDBd&amp;abgtt=6&amp;dt=1758903439146&amp;bpp=2&amp;bdt=730&amp;idt=496&amp;shv=r20250924&amp;mjsv=m202509230101&amp;ptt=9&amp;saldr=aa&amp;prev_fmts=0x0%2C788x280&amp;nras=1&amp;correlator=239919680561&amp;frm=6&amp;ife=1&amp;pv=1&amp;nhd=1&amp;u_tz=330&amp;u_his=9&amp;u_h=873&amp;u_w=393&amp;u_ah=873&amp;u_aw=393&amp;u_cd=24&amp;u_sd=2.75&amp;dmc=8&amp;adx=-12245933&amp;ady=-12245933&amp;biw=-12245933&amp;bih=-12245933&amp;isw=889&amp;ish=1669&amp;ifk=2673242189&amp;scr_x=-12245933&amp;scr_y=-12245933&amp;eid=31093039%2C31094370%2C31094694%2C95366795%2C95372142%2C95372195%2C95344789%2C95340252%2C95340254&amp;oid=2&amp;pvsid=5014722838186642&amp;tmod=1695381495&amp;uas=0&amp;nvt=1&amp;top=https%3A%2F%2Fgemini.google.com&amp;brdim=0%2C0%2C0%2C0%2C393%2C0%2C393%2C743%2C889%2C1669&amp;vis=1&amp;rsz=o%7Co%7CeonE%7C&amp;abl=NS&amp;pfx=0&amp;fu=0&amp;bc=31&amp;bz=1&amp;td=1&amp;tdf=2&amp;psd=W251bGwsbnVsbCxudWxsLDFd&amp;nt=1&amp;bisch=0&amp;blev=0.37&amp;ifi=3&amp;uci=3.swvxr96exrj7&amp;fsb=1&amp;dtd=558" data-google-container-id="3.swvxr96exrj7" tabindex="0" title="Advertisement" aria-label="Advertisement" data-load-complete="true"></iframe></div></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </section>
+
+
+            <!-- ============================================== -->
+            <!-- 3. PRIVACY POLICY SECTION -->
+            <!-- ============================================== -->
+            <section id="privacy-section" class="tool-section hidden">
+                <h2 class="text-3xl font-bold text-blue-400 mb-3">🔒 गोपनीयता नीति (Privacy Policy)</h2>
+                <p class="text-sm text-gray-300 mb-3">
+                    यह **Image Toolbox** वेबसाइट आपके **निजता (Privacy)** का सम्मान करती है। हमारी सेवा का उपयोग करके, आप इस नीति के नियमों और शर्तों से सहमत होते हैं।
+                </p>
+                
+                <h3 class="text-xl font-semibold text-gray-200 mt-4 mb-2">1. डेटा प्रोसेसिंग और स्टोरेज</h3>
+                <ul class="list-disc list-inside text-sm text-gray-300 ml-4">
+                    <li>**Client-Side Processing:** आपकी अपलोड की गई सभी इमेजेज़ (और उनसे बनी PDF) को **केवल आपके ब्राउज़र (Browser)** की मेमोरी में ही प्रोसेस, कन्वर्ट या एडिट किया जाता है।</li>
+                    <li>**कोई स्टोरेज नहीं:** हम आपकी कोई भी फाइल अपने सर्वर पर **अपलोड या स्टोर नहीं करते** हैं। पूरी प्रक्रिया आपके ब्राउज़र में ही होती है, जिससे आपकी तस्वीरें और दस्तावेज़ **पूरी तरह से निजी और सुरक्षित** रहते हैं।</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold text-gray-200 mt-4 mb-2">2. विज्ञापन और कुकीज़ (Advertising and Cookies)</h3>
+                <ul class="list-disc list-inside text-sm text-gray-300 ml-4">
+                    <li>हम Google AdSense का उपयोग करते हैं। Google AdSense विज्ञापनों को दिखाने के लिए **कुकीज़** का उपयोग करता है।</li>
+                    <li>ये कुकीज़ आपके पिछले विज़िट्स के आधार पर और आपकी रुचि के अनुसार विज्ञापन दिखा सकती हैं (personalised ads)।</li>
+                    <li>हम व्यक्तिगत रूप से कुकीज़ द्वारा एकत्र किए गए किसी भी डेटा तक एक्सेस नहीं करते हैं या उसे स्टोर नहीं करते हैं।</li>
+                </ul>
+            </section>
+
+            <!-- ============================================== -->
+            <!-- 4. CONTACT US SECTION -->
+            <!-- ============================================== -->
+            <section id="contact-section" class="tool-section hidden">
+                <h2 class="text-3xl font-bold text-blue-400 mb-3">📞 हमसे संपर्क करें (Contact Us)</h2>
+                <p class="text-sm text-gray-300">
+                    अगर आपके पास इस वेबसाइट, गोपनीयता नीति, या किसी भी टूल के संबंध में कोई प्रश्न, सुझाव या शिकायत है, तो आप नीचे दिए गए ईमेल के माध्यम से हमसे संपर्क कर सकते हैं।
+                </p>
+                <p class="text-xl font-bold text-accent-color mt-3">
+                    **ईमेल:** pankajsonwani84@gmail.com
+                </p>
+                <p class="text-sm text-gray-300 mt-2">
+                    हम जल्द से जल्द (आमतौर पर 24-48 घंटों के भीतर) आपको जवाब देने की पूरी कोशिश करेंगे।
+                </p>
+            </section>
+        </div>
+        
+    </div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><div id="aswift_0_host" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" browsingtopics="true" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;min-height:auto;max-height:none;min-width:auto;max-width:none;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2919610198483069&amp;output=html&amp;adk=1812271804&amp;adf=3279755398&amp;plat=1%3A512%2C2%3A512%2C3%3A66048%2C4%3A66048%2C8%3A512%2C9%3A33280%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C26%3A512%2C27%3A512%2C30%3A512%2C32%3A32%2C41%3A32%2C42%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fgemini.google.com&amp;pra=5&amp;wgl=1&amp;aihb=0&amp;asro=0&amp;aifxl=29_18~30_19&amp;aiapm=0.1542&amp;aiapmd=0.1423&amp;aiapmi=0.16&amp;aiapmid=1&amp;aiact=0.5423&amp;aiactd=0.7&amp;aicct=0.7&amp;aicctd=0.5799&amp;ailct=0.5849&amp;ailctd=0.65&amp;aimart=4&amp;aimartd=4&amp;uach=WyJBbmRyb2lkIiwiMTUuMC4wIiwiIiwiVjIyMjIiLCIxNDAuMC43MzM5LjE1NSIsbnVsbCwxLG51bGwsIiIsW1siQ2hyb21pdW0iLCIxNDAuMC43MzM5LjE1NSJdLFsiTm90PUE_QnJhbmQiLCIyNC4wLjAuMCJdLFsiR29vZ2xlIENocm9tZSIsIjE0MC4wLjczMzkuMTU1Il1dLDBd&amp;abgtt=6&amp;dt=1758903439129&amp;bpp=11&amp;bdt=714&amp;idt=437&amp;shv=r20250924&amp;mjsv=m202509230101&amp;ptt=9&amp;saldr=aa&amp;nras=1&amp;correlator=239919680561&amp;frm=8&amp;ife=1&amp;pv=2&amp;nhd=1&amp;u_tz=330&amp;u_his=9&amp;u_h=873&amp;u_w=393&amp;u_ah=873&amp;u_aw=393&amp;u_cd=24&amp;u_sd=2.75&amp;dmc=8&amp;adx=-12245933&amp;ady=-12245933&amp;biw=-12245933&amp;bih=-12245933&amp;isw=889&amp;ish=1669&amp;ifk=2673242189&amp;scr_x=-12245933&amp;scr_y=-12245933&amp;eid=31093039%2C31094370%2C31094694%2C95366795%2C95372142%2C95372195%2C95344789%2C95340252%2C95340254&amp;oid=2&amp;pvsid=5014722838186642&amp;tmod=1695381495&amp;uas=0&amp;nvt=1&amp;fsapi=1&amp;usrc=1&amp;brdim=0%2C0%2C0%2C0%2C393%2C0%2C393%2C743%2C889%2C1669&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=0&amp;bc=31&amp;bz=1&amp;td=1&amp;tdf=2&amp;psd=W251bGwsbnVsbCxudWxsLDFd&amp;nt=1&amp;ifi=1&amp;uci=1.cydr3dncq8cw&amp;fsb=1&amp;dtd=494" data-google-container-id="1.cydr3dncq8cw" tabindex="0" title="Advertisement" aria-label="Advertisement" data-load-complete="true"></iframe></div></ins>
+
+    <!-- Footer for Navigation -->
+    <footer class="mt-8 w-full max-w-4xl p-4 text-center text-gray-400 border-t border-gray-700">
+        <p class="text-sm mb-2">© 2024 Image Toolbox. All Rights Reserved.</p>
+        <div class="flex justify-center space-x-4 text-sm font-medium">
+            <a href="#" onclick="showSection('privacy')" class="hover:text-blue-400 transition-colors">गोपनीयता नीति (Privacy)</a>
+            <a href="#" onclick="showSection('contact')" class="hover:text-blue-400 transition-colors">हमसे संपर्क करें (Contact)</a>
+        </div>
+    </footer>
+
+    <!-- Hidden Canvas for Processing -->
+    <canvas id="hiddenCanvas" class="hidden"></canvas>
+
+    <script>
+        const { jsPDF } = window.jspdf;
+
+        // UI Elements
+        const ui = {
+            imageUpload: document.getElementById('imageUpload'),
+            fileName: document.getElementById('fileName'),
+            originalPreview: document.getElementById('originalPreview'),
+            processedPreview: document.getElementById('processedPreview'),
+            qualityRange: document.getElementById('qualityRange'),
+            qualityValue: document.getElementById('qualityValue'),
+            processBtn: document.getElementById('processBtn'),
+            downloadBtn: document.getElementById('downloadBtn'),
+            controlsSection: document.getElementById('tool-display-area'),
+            loading: document.getElementById('loading'),
+            originalSize: document.getElementById('originalSize'),
+            processedSize: document.getElementById('processedSize'),
+            outputFormat: document.getElementById('outputFormat'),
+            qualityControl: document.getElementById('qualityControl'),
+            currentToolTitle: document.getElementById('currentToolTitle'),
+            compressConvertTool: document.getElementById('compress_convert_tool'),
+            transformTool: document.getElementById('transform_tool'),
+            cropTool: document.getElementById('crop_tool'),
+            resizeWidth: document.getElementById('resizeWidth'),
+            resizeHeight: document.getElementById('resizeHeight'),
+            cropContainer: document.getElementById('cropContainer'),
+            cropPreview: document.getElementById('cropPreview'),
+            cropArea: document.getElementById('cropArea'),
+            cropX: document.getElementById('cropX'),
+            cropY: document.getElementById('cropY'),
+            cropW: document.getElementById('cropW'),
+            cropH: document.getElementById('cropH'),
+            filterSelect: document.getElementById('filterSelect'),
+        };
+
+        // Global State
+        let uploadedFile = null;
+        let originalImg = new Image();
+        let processedData = null; 
+        let processedFilename = '';
+        let currentTool = 'compress_convert';
+        
+        // Transformation States
+        let currentRotation = 0; // 0, 90, 180, 270
+        let currentFlip = { h: false, v: false };
+        let currentFilter = 'none';
+        
+        // Cropping State
+        let isDragging = false;
+        let cropStartX = 0, cropStartY = 0;
+        let cropRect = { x: 0, y: 0, w: 0, h: 0 };
+        let imgDisplayRatio = 1;
+
+
+        // --- UI AND ROUTING ---
+        function showSection(sectionId, element) {
+            document.querySelectorAll('.tool-section').forEach(section => section.classList.add('hidden'));
+            document.getElementById(`${sectionId}-section`).classList.remove('hidden');
+
+            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+
+            if (element) {
+                element.classList.add('active');
+            } else {
+                const targetLink = document.querySelector(`.nav-link[onclick*="${sectionId}"]`);
+                if(targetLink) targetLink.classList.add('active');
+            }
+            
+            // Show sidebar only on the toolbox section
+            document.getElementById('tool-sidebar').classList.toggle('hidden', sectionId !== 'toolbox');
+            document.querySelector('.main-content').classList.toggle('lg:grid-cols-4', sectionId === 'toolbox');
+            
+            // Show/Hide Ads based on section
+            document.getElementById('home-ad-banner').classList.toggle('hidden', sectionId !== 'home');
+            document.getElementById('ad-banner').classList.toggle('hidden', sectionId !== 'toolbox');
+
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function selectTool(toolName) {
+            currentTool = toolName;
+            document.querySelectorAll('.tool-view').forEach(view => view.classList.add('hidden'));
+            document.getElementById(`${toolName}_tool`).classList.remove('hidden');
+
+            document.querySelectorAll('.tool-link').forEach(link => link.classList.remove('active'));
+            document.querySelector(`.tool-link[onclick*="${toolName}"]`).classList.add('active');
+
+            // Update title
+            const titles = {
+                'compress_convert': '⚡ कंप्रेस & कन्वर्ट',
+                'transform': '📐 इमेज ट्रांसफॉर्मेशन',
+                'crop': '✂️ इमेज क्रॉप करें',
+            };
+            ui.currentToolTitle.textContent = titles[toolName];
+
+            // Reset UI for tool switch
+            ui.processBtn.disabled = !uploadedFile;
+            ui.downloadBtn.classList.add('hidden');
+            ui.cropArea.classList.add('hidden');
+            ui.processedPreview.src = '';
+            ui.processedSize.textContent = '';
+            
+            if (uploadedFile) {
+                // For transform and crop, show original image in processed preview area
+                ui.processedPreview.src = ui.originalPreview.src;
+                ui.processedSize.textContent = 'प्रोसेस करने के लिए सेटिंग्स बदलें।';
+                handleFormatChange(ui.outputFormat.value); // Re-run format changes if needed
+                if (toolName === 'crop') {
+                    setupCropper();
+                } else if (toolName === 'transform') {
+                    // Reset resize fields on tool switch
+                    ui.resizeWidth.value = '';
+                    ui.resizeHeight.value = '';
+                    // Automatically process transformations to show current state (if any)
+                    processImage();
+                }
+            }
+        }
+        
+        // --- EVENT HANDLERS ---
+
+        function updateQualityValue(value) {
+            ui.qualityValue.textContent = (parseFloat(value) * 100).toFixed(0) + '%'; 
+            if (uploadedFile) {
+                ui.processBtn.disabled = false;
+            }
+        }
+
+        function handleFormatChange(format) {
+            const isPDF = format === 'make_pdf';
+
+            ui.qualityControl.classList.toggle('hidden', isPDF);
+            
+            ui.processBtn.textContent = isPDF ? '📄 PDF बनाएं' : '🔄 प्रोसेस करें';
+            
+            ui.processedSize.innerHTML = '';
+            ui.processedPreview.classList.add('hidden');
+
+            if (uploadedFile) {
+                ui.processBtn.disabled = false;
+            }
+        }
+
+        function previewImage() {
+            const file = ui.imageUpload.files[0];
+            if (!file) {
+                resetApp();
+                return;
+            }
+
+            uploadedFile = file;
+            ui.fileName.textContent = `चुनी गई फाइल: ${file.name}`;
+            ui.processBtn.disabled = false;
+            ui.downloadBtn.classList.add('hidden');
+            ui.processedSize.textContent = '';
+            
+            // Reset all transformation states on new upload
+            currentRotation = 0;
+            currentFlip = { h: false, v: false };
+            currentFilter = 'none';
+            ui.filterSelect.value = 'none';
+
+
+            const parts = file.name.split('.');
+            const extension = parts.pop();
+            processedFilename = `${parts.join('.')}_processed.${extension}`;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                originalImg.onload = function() {
+                    updateOriginalPreview(e.target.result); // Use helper function
+                    ui.controlsSection.classList.remove('hidden');
+                    
+                    // Show the current tool and auto-process
+                    selectTool(currentTool);
+                    if (currentTool !== 'crop') {
+                        processImage(); 
+                    } else {
+                        setupCropper();
+                    }
+                };
+                originalImg.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        // Helper function to update the original preview area
+        function updateOriginalPreview(dataURL) {
+             ui.originalPreview.src = dataURL;
+             ui.processedPreview.src = dataURL; // Default to current state
+             ui.originalSize.textContent = `साइज़: ${(uploadedFile.size / 1024).toFixed(2)} KB | ${originalImg.width}x${originalImg.height} px`;
+        }
+        
+        // --- TRANSFORMATION LOGIC (Rotate, Flip, Filter) ---
+
+        async function rotateImage() {
+            if (!uploadedFile) return;
+            currentRotation = (currentRotation + 90) % 360;
+            processImage();
+        }
+        
+        function flipImage(axis) {
+            if (!uploadedFile) return;
+            if (axis === 'h') {
+                currentFlip.h = !currentFlip.h;
+            } else if (axis === 'v') {
+                currentFlip.v = !currentFlip.v;
+            }
+            processImage();
+        }
+
+        function setFilter(filter) {
+            if (!uploadedFile) return;
+            currentFilter = filter;
+            processImage();
+        }
+        
+        function applyTransformations() {
+            if (!uploadedFile) return;
+
+            ui.loading.classList.remove('hidden');
+            ui.processBtn.disabled = true;
+            ui.processedSize.textContent = 'ट्रांसफ़ॉर्मेशन लागू हो रहा है...';
+
+            const canvas = document.getElementById('hiddenCanvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Determine dimensions based on rotation
+            const isRotated = currentRotation === 90 || currentRotation === 270;
+            let currentImgWidth = originalImg.width;
+            let currentImgHeight = originalImg.height;
+            
+            const newCanvasWidth = isRotated ? currentImgHeight : currentImgWidth;
+            const newCanvasHeight = isRotated ? currentImgWidth : currentImgHeight;
+            
+            canvas.width = newCanvasWidth;
+            canvas.height = newCanvasHeight;
+            
+            // Apply Filter
+            if (currentFilter === 'grayscale') {
+                ctx.filter = 'grayscale(100%)';
+            } else if (currentFilter === 'sepia') {
+                ctx.filter = 'sepia(100%)';
+            } else if (currentFilter === 'invert') {
+                ctx.filter = 'invert(100%)';
+            } else {
+                ctx.filter = 'none';
+            }
+
+            ctx.clearRect(0, 0, newCanvasWidth, newCanvasHeight);
+            ctx.save();
+            
+            // 1. Translate for Rotation
+            if (currentRotation === 90) {
+                ctx.translate(newCanvasWidth, 0);
+                ctx.rotate(90 * Math.PI / 180);
+            } else if (currentRotation === 180) {
+                ctx.translate(newCanvasWidth, newCanvasHeight);
+                ctx.rotate(180 * Math.PI / 180);
+            } else if (currentRotation === 270) {
+                ctx.translate(0, newCanvasHeight);
+                ctx.rotate(270 * Math.PI / 180);
+            }
+
+            // 2. Translate and Scale for Flip
+            const flipX = currentFlip.h ? -1 : 1;
+            const flipY = currentFlip.v ? -1 : 1;
+            
+            // Account for rotation when applying flip translation
+            let tx = 0, ty = 0;
+            
+            if (currentRotation === 0 || currentRotation === 180) {
+                tx = currentFlip.h ? -currentImgWidth : 0;
+                ty = currentFlip.v ? -currentImgHeight : 0;
+            } else { // 90 or 270 degrees
+                tx = currentFlip.h ? -currentImgHeight : 0;
+                ty = currentFlip.v ? -currentImgWidth : 0;
+            }
+            
+            if (currentRotation === 90) {
+                tx = currentFlip.v ? -currentImgHeight : 0;
+                ty = currentFlip.h ? -currentImgWidth : 0;
+            } else if (currentRotation === 270) {
+                tx = currentFlip.v ? -currentImgHeight : 0;
+                ty = currentFlip.h ? -currentImgWidth : 0;
+            }
+
+
+            // Final transformation matrix
+            // This is complex due to chained operations. Simplest approach: draw on a hidden canvas, then apply resize/save.
+            
+            // Reset state to draw original image
+            const tempCanvas = document.createElement('canvas');
+            const tempCtx = tempCanvas.getContext('2d');
+            tempCanvas.width = originalImg.naturalWidth;
+            tempCanvas.height = originalImg.naturalHeight;
+            tempCtx.drawImage(originalImg, 0, 0);
+            
+            // Load original image again to ensure we don't apply transformation to an already transformed image
+            const initialImg = new Image();
+            initialImg.onload = function() {
+                
+                // Set up the final canvas with correct dimensions for rotation
+                const isRotatedFinal = currentRotation === 90 || currentRotation === 270;
+                const cw = isRotatedFinal ? initialImg.height : initialImg.width;
+                const ch = isRotatedFinal ? initialImg.width : initialImg.height;
+
+                canvas.width = cw;
+                canvas.height = ch;
+                ctx.clearRect(0, 0, cw, ch);
+                ctx.save();
+                
+                // 1. Apply Filter
+                ctx.filter = currentFilter === 'none' ? 'none' : 
+                             currentFilter === 'grayscale' ? 'grayscale(100%)' :
+                             currentFilter === 'sepia' ? 'sepia(100%)' : 'invert(100%)';
+
+                // 2. Apply Rotation and Flip (Combined Transformation)
+                let translateX = cw / 2;
+                let translateY = ch / 2;
+                ctx.translate(translateX, translateY);
+                
+                // Rotation
+                ctx.rotate(currentRotation * Math.PI / 180);
+                
+                // Flip (scaling)
+                ctx.scale(currentFlip.h ? -1 : 1, currentFlip.v ? -1 : 1);
+                
+                // Draw image (backwards translation)
+                const drawWidth = isRotatedFinal ? initialImg.height : initialImg.width;
+                const drawHeight = isRotatedFinal ? initialImg.width : initialImg.height;
+                
+                ctx.drawImage(initialImg, -drawWidth / 2, -drawHeight / 2, drawWidth, drawHeight);
+
+                ctx.restore();
+                
+                // Get the Data URL of the CURRENT state (after rotate/flip/filter)
+                const currentStateDataURL = canvas.toDataURL('image/png');
+                
+                // Apply Resize if required
+                const targetWidth = parseInt(ui.resizeWidth.value);
+                const targetHeight = parseInt(ui.resizeHeight.value);
+                
+                let finalWidth = cw;
+                let finalHeight = ch;
+                
+                if (targetWidth || targetHeight) {
+                    if (targetWidth && !targetHeight) {
+                        finalWidth = targetWidth;
+                        finalHeight = (ch / cw) * targetWidth;
+                    } else if (!targetWidth && targetHeight) {
+                        finalHeight = targetHeight;
+                        finalWidth = (cw / ch) * targetHeight;
+                    } else {
+                        finalWidth = targetWidth;
+                        finalHeight = targetHeight;
+                    }
+                    
+                    // Create new canvas for resize
+                    const resizeCanvas = document.createElement('canvas');
+                    const resizeCtx = resizeCanvas.getContext('2d');
+                    resizeCanvas.width = finalWidth;
+                    resizeCanvas.height = finalHeight;
+
+                    // Draw the transformed state onto the resize canvas
+                    const tempTransformedImg = new Image();
+                    tempTransformedImg.onload = function() {
+                        resizeCtx.drawImage(tempTransformedImg, 0, 0, finalWidth, finalHeight);
+
+                        resizeCanvas.toBlob(function(blob) {
+                            // Update global state with the fully processed result
+                            processedData = blob;
+                            processedFilename = processedFilename.replace(/\.[^/.]+$/, `_transformed.jpg`);
+                            
+                            ui.processedPreview.src = URL.createObjectURL(blob);
+                            ui.processedPreview.classList.remove('hidden');
+
+                            ui.processedSize.innerHTML = 
+                                `नया साइज़: ${blob.size / 1024} KB<br> 
+                                 Dimensions: ${Math.round(finalWidth)}x${Math.round(finalHeight)} px`;
+
+                            finalizeProcess(true);
+                        }, 'image/jpeg', 0.9);
+                    };
+                    tempTransformedImg.src = currentStateDataURL;
+
+                } else {
+                    // No resize, just save the transformed canvas
+                     canvas.toBlob(function(blob) {
+                        processedData = blob;
+                        processedFilename = processedFilename.replace(/\.[^/.]+$/, `_transformed.jpg`);
+                        
+                        ui.processedPreview.src = URL.createObjectURL(blob);
+                        ui.processedPreview.classList.remove('hidden');
+
+                        ui.processedSize.innerHTML = 
+                            `नया साइज़: ${blob.size / 1024} KB<br> 
+                             Dimensions: ${Math.round(cw)}x${Math.round(ch)} px`;
+
+                        finalizeProcess(true);
+                    }, 'image/jpeg', 0.9);
+                }
+
+                // Update originalImg state for next operation to use the current transformed state
+                originalImg.src = currentStateDataURL;
+                updateOriginalPreview(currentStateDataURL);
+            }
+            initialImg.src = uploadedFile ? URL.createObjectURL(uploadedFile) : null;
+        }
+
+
+        // --- CROPPER LOGIC ---
+        function setupCropper() {
+            // Cropper setup logic remains the same
+            const container = ui.cropContainer;
+            ui.cropPreview.src = originalImg.src; // Use current image state (which may be rotated/flipped)
+            ui.cropPreview.onload = () => {
+                // Calculate display ratio
+                imgDisplayRatio = ui.cropPreview.naturalWidth / ui.cropPreview.clientWidth;
+                
+                // Set initial crop area (full image)
+                cropRect = { x: 0, y: 0, w: ui.cropPreview.clientWidth, h: ui.cropPreview.clientHeight };
+                updateCropAreaUI();
+
+                // Setup Mouse/Touch Listeners
+                container.onmousedown = startDrag;
+                container.ontouchstart = startDrag;
+                container.onmousemove = duringDrag;
+                container.ontouchmove = duringDrag;
+                container.onmouseup = endDrag;
+                container.ontouchend = endDrag;
+                container.onmouseleave = endDrag;
+
+                ui.cropArea.classList.remove('hidden');
+            };
+        }
+
+        function updateCropAreaUI() {
+            ui.cropArea.style.left = `${cropRect.x}px`;
+            ui.cropArea.style.top = `${cropRect.y}px`;
+            ui.cropArea.style.width = `${cropRect.w}px`;
+            ui.cropArea.style.height = `${cropRect.h}px`;
+
+            // Display values based on original image resolution
+            ui.cropX.textContent = Math.round(cropRect.x * imgDisplayRatio);
+            ui.cropY.textContent = Math.round(cropRect.y * imgDisplayRatio);
+            ui.cropW.textContent = Math.round(cropRect.w * imgDisplayRatio);
+            ui.cropH.textContent = Math.round(cropRect.h * imgDisplayRatio);
+        }
+
+        function getClientCoords(e) {
+            const rect = ui.cropPreview.getBoundingClientRect();
+            let clientX, clientY;
+            
+            if (e.touches && e.touches.length > 0) {
+                clientX = e.touches[0].clientX;
+                clientY = e.touches[0].clientY;
+            } else {
+                clientX = e.clientX;
+                clientY = e.clientY;
+            }
+
+            // Convert client coordinates to coordinates relative to the preview image
+            return {
+                x: clientX - rect.left,
+                y: clientY - rect.top
+            };
+        }
+
+        function startDrag(e) {
+            e.preventDefault();
+            isDragging = true;
+            const coords = getClientCoords(e);
+            cropStartX = coords.x;
+            cropStartY = coords.y;
+            
+            // Start a new small crop area
+            cropRect = { x: cropStartX, y: cropStartY, w: 1, h: 1 };
+            updateCropAreaUI();
+        }
+
+        function duringDrag(e) {
+            if (!isDragging) return;
+            e.preventDefault();
+            const coords = getClientCoords(e);
+            let currentX = coords.x;
+            let currentY = coords.y;
+            
+            const startX = Math.min(cropStartX, currentX);
+            const startY = Math.min(cropStartY, currentY);
+            
+            let width = Math.abs(cropStartX - currentX);
+            let height = Math.abs(cropStartY - currentY);
+
+            // Limit crop area to image boundaries
+            const imgWidth = ui.cropPreview.clientWidth;
+            const imgHeight = ui.cropPreview.clientHeight;
+            
+            if (startX + width > imgWidth) {
+                width = imgWidth - startX;
+            }
+            if (startY + height > imgHeight) {
+                height = imgHeight - startY;
+            }
+
+            cropRect = { x: startX, y: startY, w: width, h: height };
+            updateCropAreaUI();
+        }
+
+        function endDrag() {
+            isDragging = false;
+        }
+
+
+        // --- MAIN PROCESSOR ---
+
+        function processImage() {
+            if (!uploadedFile) return;
+
+            ui.loading.classList.remove('hidden');
+            ui.processBtn.disabled = true;
+            ui.downloadBtn.classList.add('hidden');
+            ui.processedSize.textContent = 'प्रोसेस हो रहा है...';
+            ui.processedPreview.classList.add('hidden');
+            
+            switch (currentTool) {
+                case 'compress_convert':
+                    const format = ui.outputFormat.value;
+                    const quality = parseFloat(ui.qualityRange.value);
+                    if (format === 'make_pdf') {
+                        convertToPdf();
+                    } else {
+                        convertImage(format, quality);
+                    }
+                    break;
+                case 'transform':
+                    applyTransformations();
+                    break;
+                case 'crop':
+                    cropImage();
+                    break;
+                default:
+                    finalizeProcess(false);
+            }
+        }
+
+        function convertImage(format, quality) {
+            // Convert and compress the CURRENT state of the image (originalImg.src)
+            const mimeMap = {
+                'compress_jpg': 'image/jpeg',
+                'compress_png': 'image/png',
+                'convert_jpg': 'image/jpeg',
+                'convert_png': 'image/png'
+            };
+            
+            const mimeType = mimeMap[format];
+            
+            const canvas = document.getElementById('hiddenCanvas');
+            canvas.width = originalImg.width;
+            canvas.height = originalImg.height;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(originalImg, 0, 0);
+
+            let extension = format === 'convert_png' || format === 'compress_png' ? 'png' : 'jpg';
+            processedFilename = processedFilename.replace(/\.[^/.]+$/, `_processed.${extension}`);
+
+            canvas.toBlob(function(blob) {
+                processedData = blob;
+                
+                ui.processedPreview.src = URL.createObjectURL(blob);
+                ui.processedPreview.classList.remove('hidden');
+
+                // Using uploadedFile.size here isn't accurate for comparison if originalImg has been transformed/resized previously
+                const originalSizeKB = uploadedFile.size / 1024;
+                const processedSizeKB = blob.size / 1024;
+                const savings = ((originalSizeKB - processedSizeKB) / originalSizeKB) * 100;
+
+                ui.processedSize.innerHTML = 
+                    `साइज़: ${processedSizeKB.toFixed(2)} KB <br> 
+                     बचत: <span class="text-green-400 font-bold">${savings.toFixed(1)}%</span>`;
+
+                finalizeProcess(true);
+
+            }, mimeType, quality);
+        }
+
+        function convertToPdf() {
+            const imgData = originalImg.src;
+            // Use current image width/height (after any previous transformation)
+            const imgWidth = originalImg.width;
+            const imgHeight = originalImg.height;
+            
+            const pdf = new jsPDF('p', 'mm', 'a4'); 
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = pdf.internal.pageSize.getHeight();
+
+            const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight);
+            const scaledWidth = imgWidth * ratio;
+            const scaledHeight = imgHeight * ratio;
+
+            const x = (pdfWidth - scaledWidth) / 2;
+            const y = (pdfHeight - scaledHeight) / 2;
+
+            pdf.addImage(imgData, 'JPEG', x, y, scaledWidth, scaledHeight);
+            
+            processedData = pdf;
+            processedFilename = processedFilename.replace(/\.[^/.]+$/, `_processed.pdf`);
+            
+            ui.processedPreview.classList.add('hidden');
+            ui.processedSize.innerHTML = 'फ़ाइल तैयार: **Image to PDF**';
+            
+            finalizeProcess(true);
+        }
+
+        function cropImage() {
+            // Cropping is done on the current state of originalImg (which may be transformed)
+            // Get original image dimensions based on displayed crop area
+            const scaleX = originalImg.naturalWidth / ui.cropPreview.clientWidth;
+            const scaleY = originalImg.naturalHeight / ui.cropPreview.clientHeight;
+
+            const cropX = cropRect.x * scaleX;
+            const cropY = cropRect.y * scaleY;
+            const cropW = cropRect.w * scaleX;
+            const cropH = cropRect.h * scaleY;
+            
+            if (cropW < 10 || cropH < 10) {
+                 ui.processedSize.innerHTML = '<span class="text-red-400">क्रॉप एरिया बहुत छोटा है।</span>';
+                finalizeProcess(false);
+                return;
+            }
+
+            const canvas = document.getElementById('hiddenCanvas');
+            canvas.width = cropW;
+            canvas.height = cropH;
+            const ctx = canvas.getContext('2d');
+            
+            // Draw only the cropped section
+            ctx.drawImage(originalImg, 
+                          cropX, cropY, cropW, cropH, 
+                          0, 0, cropW, cropH);
+            
+            // Update originalImg state for next operation
+            originalImg.src = canvas.toDataURL('image/png');
+
+
+            canvas.toBlob(function(blob) {
+                processedData = blob;
+                processedFilename = processedFilename.replace(/\.[^/.]+$/, `_cropped.jpg`);
+                
+                ui.processedPreview.src = URL.createObjectURL(blob);
+                ui.processedPreview.classList.remove('hidden');
+
+                ui.processedSize.innerHTML = 
+                    `नया साइज़: ${blob.size / 1024} KB<br> 
+                     Dimensions: ${Math.round(cropW)}x${Math.round(cropH)} px`;
+
+                finalizeProcess(true);
+            }, 'image/jpeg', 0.95);
+        }
+
+        // Finalize UI state after processing
+        function finalizeProcess(success) {
+            ui.loading.classList.add('hidden');
+            ui.processBtn.disabled = false;
+            if (success) {
+                ui.downloadBtn.classList.remove('hidden');
+            } else {
+                // If there was an error and processedSize wasn't updated, show generic error
+                if (!ui.processedSize.textContent.includes('Error') && !ui.processedSize.textContent.includes('घुमाई गई')) {
+                    ui.processedSize.innerHTML = '<span class="text-red-400">प्रोसेसिंग में त्रुटि (Error)</span>';
+                }
+            }
+        }
+
+
+        // Handles the downloading of the processed image/pdf
+        function downloadProcessedImage() {
+            if (!processedData) return;
+            
+            const format = currentTool === 'compress_convert' ? ui.outputFormat.value : null;
+
+            if (format === 'make_pdf') {
+                // Download PDF
+                processedData.save(processedFilename);
+            } else {
+                // Download Image Blob
+                const url = URL.createObjectURL(processedData);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = processedFilename;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            }
+        }
+        
+        // Function to download the entire source code file
+        function downloadSourceCode() {
+            // Get the entire HTML content of the current file
+            const htmlContent = document.documentElement.outerHTML;
+            const blob = new Blob([htmlContent], { type: 'text/html' });
+            
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'image_toolbox_ultimate.html'; // Default filename
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(a.href);
+        }
+
+
+        // Reset the application state
+        function resetApp() {
+            uploadedFile = null;
+            processedData = null;
+            
+            // Reset transformation states
+            currentRotation = 0;
+            currentFlip = { h: false, v: false };
+            currentFilter = 'none';
+            if(ui.filterSelect) ui.filterSelect.value = 'none';
+
+            ui.fileName.textContent = 'कोई फाइल नहीं चुनी गई। (JPG, PNG सपोर्टेड)';
+            ui.originalPreview.src = '';
+            ui.originalSize.textContent = '';
+            ui.processedSize.textContent = '';
+            ui.controlsSection.classList.add('hidden');
+            ui.downloadBtn.classList.add('hidden');
+            ui.processBtn.disabled = true;
+            ui.qualityRange.value = 0.8;
+            updateQualityValue(0.8);
+            ui.outputFormat.value = 'compress_jpg';
+            handleFormatChange('compress_jpg');
+            ui.cropArea.classList.add('hidden');
+            ui.resizeWidth.value = '';
+            ui.resizeHeight.value = '';
+        }
+
+        // Initial setup
+        resetApp();
+        showSection('home', document.querySelector('.nav-link'));
+    </script>
+
+
+<iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="https://googleads.g.doubleclick.net/pagead/html/r20250924/r20190131/zrt_lookup_fy2021.html" style="display: none;"></iframe></html>
